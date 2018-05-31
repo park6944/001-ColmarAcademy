@@ -1,0 +1,256 @@
+/* Common Style */
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,700,800|Open+Sans:400,700,800');
+
+
+body {
+    /*    font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Libre Franklin', sans-serif;
+    color: #4A4A4A;
+    background-color: #D8D8D8;
+    font-size: 16px;
+}
+
+.main-content {
+    position: relative;
+    top: 4rem;
+    width: 100%;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+.left {
+    width: 60%;
+    padding-left: 1.5rem;
+}
+
+.right {
+    width: 40%;
+    padding-left: 1.5rem;
+}
+
+.banner-img {
+    max-width: 100%;
+}
+
+.headline {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.sub-headline {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.discription {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+@media only screen and (max-width: 760px) {}
+
+/* Header */
+
+.academy {
+    color: #9B9B9B;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding-left: 1.5rem;
+    height: 2rem;
+}
+
+nav ul {
+    display: flex;
+    padding-right: 1.5rem;
+}
+
+nav li {
+    padding-left: 1rem;
+}
+
+
+.mobile {
+    display: none;
+}
+
+
+/* Responsive Design - Header */
+
+@media only screen and (max-width: 760px) {
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .mobile ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .mobile li {
+        padding: 0;
+    }
+}
+
+/*Header Design End*/
+
+/*Banner Section Design*/
+
+#banner-section {
+    background-color: #D8D8D8;
+    display: flex;
+    align-items: center;
+}
+
+.banner-content {
+    padding-left: 2.5rem;
+}
+
+.banner-discription {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+}
+
+.banner-content .btn {
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+    background-color: #4A4A4A;
+    color: white;
+}
+
+/* Responsive Design - Banner Section */
+
+@media only screen and (max-width: 760px) {
+    #banner-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 0;
+    }
+
+    .images {
+        width: 100%;
+        padding: 0;
+    }
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 1rem 0 1rem;
+    }
+
+    .banner-discription {
+        display: flex;
+        flex-direction: column;
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .banner-content span {
+        font-size: 2rem;
+    }
+
+    .banner-content .btn {
+        display: flex;
+        justify-content: center;
+        padding: 8px 0;
+        background-color: #9B9B9B;
+        color: white;
+
+    }
+}
+
+
+
+
+/*Info Section Style*/
+
+#info-section {
+    background-color: white;
+    display: flex;
+}
+
+.info-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+.info-banner .info-discription {
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.info-heading {
+    padding-top: 2rem;
+}
+
+.info-column {
+    display: flex;
+    align-items: center;
+}
+
+.info-img {
+    width: 35%;
+    height: auto;
+    padding: 1rem;
+}
+
+.orientation .info-img {
+    padding-top: 0;
+}
+
+.info-img img {
+    max-width: 100%;
+}
+
+.info-discription {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-column .discription {
+    padding: .5rem 0;
+}
+
+.guest {
+    background-color: #D8D8D8;
+}
+
+.guest .discription {
+    display: flex;
+    flex-direction: column;
+}
+
+.blue {
+    color: #4A90E2;
+}
