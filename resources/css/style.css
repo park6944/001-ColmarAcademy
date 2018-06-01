@@ -52,7 +52,7 @@ section {
     line-height: 2rem;
 }
 
-@media only screen and (max-width: 440px) {}
+@media only screen and (max-width: 800px) {}
 
 /* Header */
 
@@ -95,7 +95,7 @@ nav li {
 
 /* Responsive Design - Header */
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 800px) {
 
     .desktop {
         display: none;
@@ -149,7 +149,7 @@ nav li {
 
 /* Responsive Design - Banner Section */
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 800px) {
     #banner-section {
         display: flex;
         flex-direction: column;
