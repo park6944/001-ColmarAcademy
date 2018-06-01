@@ -95,7 +95,7 @@ nav li {
 
 /* Responsive Design - Header */
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 700px) {
 
     .desktop {
         display: none;
