@@ -7,7 +7,7 @@ body {
     /*    font-family: 'Open Sans', sans-serif;*/
     font-family: 'Libre Franklin', sans-serif;
     color: #4A4A4A;
-    background-color: #D8D8D8;
+
     font-size: 16px;
 }
 
@@ -15,6 +15,7 @@ body {
     position: relative;
     top: 4rem;
     width: 100%;
+    background-color: #D8D8D8;
 }
 
 section {
@@ -52,13 +53,7 @@ section {
     line-height: 2rem;
 }
 
-@media only screen and (max-width: 800px) {}
-
 /* Header */
-
-.academy {
-    color: #9B9B9B;
-}
 
 .header {
     position: fixed;
@@ -68,6 +63,14 @@ section {
     height: 4rem;
     display: flex;
     align-items: center;
+}
+
+.header a {
+    color: #4a4a4a;
+}
+
+.header .academy {
+    color: #9B9B9B;
 }
 
 .logo {
@@ -95,7 +98,7 @@ nav li {
 
 /* Responsive Design - Header */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 760px) {
 
     .desktop {
         display: none;
@@ -119,7 +122,7 @@ nav li {
     }
 }
 
-/*Header Design End*/
+
 
 /*Banner Section Design*/
 
@@ -149,7 +152,7 @@ nav li {
 
 /* Responsive Design - Banner Section */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 760px) {
     #banner-section {
         display: flex;
         flex-direction: column;
@@ -195,7 +198,11 @@ nav li {
 /*Info Section Style*/
 
 #info-section {
-    background-color: white;
+    background-color: #F3F5F5;
+    display: flex;
+}
+
+.desktop {
     display: flex;
 }
 
@@ -236,6 +243,7 @@ nav li {
 .info-discription {
     display: flex;
     flex-direction: column;
+    width: 65%;
 }
 
 .info-column .discription {
@@ -253,4 +261,240 @@ nav li {
 
 .blue {
     color: #4A90E2;
+}
+
+.mobile {
+    display: none;
+}
+
+/* Responsive Design - Information Section */
+
+@media only screen and (max-width: 760px) {
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    .info-img {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .info-column {
+        display: block;
+    }
+
+    .info-discription {
+        padding: 2rem 1rem 4rem;
+    }
+
+    .guest {
+        background-color: white;
+    }
+
+    .guest .info-discription {
+        padding-bottom: 0;
+    }
+}
+
+
+/*Course Section Style*/
+
+.course-mobile {
+    display: none;
+}
+
+.top-banner {
+    display: flex;
+    justify-content: center;
+}
+
+.course-desktop {
+    padding: 2rem 4.5rem 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-top,
+.course-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.course-images {
+    height: auto;
+}
+
+
+.course-bottom {
+    margin-top: 2rem;
+}
+
+.course-list {
+    background-color: white;
+    margin-left: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.course-info {
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+}
+
+.course-info .list,
+.courses {
+    font-size: 1rem;
+    line-height: 2rem;
+    padding-top: .5rem;
+}
+
+/* Responsive Design - Course Section */
+
+@media only screen and (max-width: 760px) {
+    .course-desktop {
+        display: none;
+    }
+
+    .course {
+        background-color: white;
+    }
+
+    .course-mobile {
+        display: block;
+        padding: .5rem 1rem 0;
+    }
+
+    .course-mobile div {
+        background-color: #D8D8D8;
+        padding: 1.5rem;
+        margin-top: .5rem;
+    }
+
+    .course-mobile .btn {
+        color: #4a4a4a;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+
+/*Thesis Section Design*/
+
+#thesis-section {
+    background-color: #F3F5F5;
+}
+
+.thesis-top {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+
+.thesis-heading {
+    padding: 1.5rem 0 .5rem;
+}
+
+.thesis-desktop {
+    display: flex;
+}
+
+.thesis video {
+    max-width: 100%;
+    height: auto;
+}
+
+.thesis-mobile {
+    display: none;
+}
+
+.thesis-column {
+    display: flex;
+    align-items: center;
+}
+
+.thesis-img {
+    width: 35%;
+    height: auto;
+    padding: 1rem;
+}
+
+.fisma {
+    background-color: #D8D8D8;
+}
+
+.thesis-img img {
+    max-width: 100%;
+}
+
+.thesis-discription {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.thesis-column .discription {
+    padding: .5rem 0;
+}
+
+/* Responsive Design - Thesis Section */
+
+@media only screen and (max-width: 760px) {
+    .thesis-desktop {
+        display: none;
+    }
+
+    .thesis-mobile {
+        display: block;
+    }
+}
+
+
+/*Footer Design*/
+
+footer {
+    padding: 1rem 1.5rem 3rem;
+    background-color: #F3F5F5;
+    border-top: 1px solid #E9EBEB;
+
+    font-size: .75rem;
+}
+
+.content-desktop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-mobile {
+    display: none;
+}
+
+footer .nav ul {
+    display: flex;
+}
+
+footer .nav ul li {
+    padding-left: 1rem;
+}
+
+footer a {
+    color: #4a4a4a;
+}
+
+
+@media only screen and (max-width: 760px) {
+    .content-desktop {
+        display: none;
+    }
+
+    .content-mobile {
+        display: block;
+    }
 }
